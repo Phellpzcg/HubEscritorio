@@ -7,15 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #ffffff;
+            color: #000000;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
         header {
-            background-color: #0073e6;
+            background-color: #ffffff;
             padding: 20px;
-            color: white;
+            text-align: center;
+            border-bottom: 4px solid #d4af37;
         }
         header img {
             height: 60px;
@@ -24,28 +25,38 @@
         }
         main {
             padding: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category {
+            background-color: #f5f5f5;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            padding: 20px;
+        }
+        .category h2 {
+            margin-top: 0;
+            color: #000000;
         }
         .links {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            max-width: 400px;
-            margin: 0 auto;
+            gap: 10px;
         }
         .links a {
             text-decoration: none;
-            background-color: white;
-            padding: 12px;
-            border-radius: 8px;
-            color: #333;
-            font-weight: bold;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            transition: background 0.2s, transform 0.2s;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #d4af37;
+            text-align: center;
+            transition: background 0.2s, color 0.2s;
         }
         .links a:hover {
-            background-color: #0073e6;
-            color: white;
-            transform: scale(1.03);
+            background-color: #d4af37;
+            color: #000000;
         }
     </style>
 </head>
@@ -55,13 +66,39 @@
         <h1>Links Úteis</h1>
     </header>
     <main>
-        <div class="links">
-            <a href="https://www.google.com" target="_blank">Google</a>
-            <a href="https://www.receita.fazenda.gov.br" target="_blank">Receita Federal</a>
-            <a href="https://www.gov.br" target="_blank">Governo Federal</a>
-            <a href="https://www.bcb.gov.br" target="_blank">Banco Central</a>
-            <a href="https://www.trf1.jus.br" target="_blank">TRF1</a>
-        </div>
+        <!-- Para adicionar nova categoria, duplique o bloco abaixo -->
+        <section class="category">
+            <h2>Categoria 1</h2>
+            <div class="links">
+                <!-- Adicione novos links abaixo seguindo o padrão -->
+                <a href="#" target="_blank">Link Exemplo 1</a>
+                <a href="#" target="_blank">Link Exemplo 2</a>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Categoria 2</h2>
+            <div class="links">
+                <!-- Adicione novos links abaixo seguindo o padrão -->
+                <a href="#" target="_blank">Link Exemplo 1</a>
+                <a href="#" target="_blank">Link Exemplo 2</a>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Categoria 3</h2>
+            <div class="links">
+                <!-- Adicione novos links abaixo seguindo o padrão -->
+                <a href="#" target="_blank">Link Exemplo 1</a>
+                <a href="#" target="_blank">Link Exemplo 2</a>
+            </div>
+        </section>
+        <section class="category">
+            <h2>Categoria 4</h2>
+            <div class="links">
+                <!-- Adicione novos links abaixo seguindo o padrão -->
+                <a href="#" target="_blank">Link Exemplo 1</a>
+                <a href="#" target="_blank">Link Exemplo 2</a>
+            </div>
+        </section>
     </main>
 </body>
 </html>
