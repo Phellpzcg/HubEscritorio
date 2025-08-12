@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links Úteis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #0073e6;
+            padding: 20px;
+            color: white;
+        }
+        header img {
+            height: 60px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        main {
+            padding: 30px;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .links a {
+            text-decoration: none;
+            background-color: white;
+            padding: 12px;
+            border-radius: 8px;
+            color: #333;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .links a:hover {
+            background-color: #0073e6;
+            color: white;
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Logo">
+        <h1>Links Úteis</h1>
+    </header>
+    <main>
+        <div class="links">
+            <a href="https://www.google.com" target="_blank">Google</a>
+            <a href="https://www.receita.fazenda.gov.br" target="_blank">Receita Federal</a>
+            <a href="https://www.gov.br" target="_blank">Governo Federal</a>
+            <a href="https://www.bcb.gov.br" target="_blank">Banco Central</a>
+            <a href="https://www.trf1.jus.br" target="_blank">TRF1</a>
+        </div>
+    </main>
+</body>
+</html>
