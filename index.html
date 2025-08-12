@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Links Úteis</title>
+
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,7 +32,6 @@
             height: 60px;
             margin-right: 15px;
         }
-        /* Ajuste do tamanho do título */
         header h1 {
             font-size: 20px;
             margin: 0;
@@ -68,7 +71,6 @@
             flex-direction: column;
             gap: 10px;
         }
-        /* Ajuste do tamanho e altura dos botões */
         .links a {
             text-decoration: none;
             background-color: #d4af37;
@@ -76,14 +78,29 @@
             padding: 6px 8px;
             border-radius: 5px;
             border: 2px solid #d4af37;
-            text-align: center;
             font-size: 16px;
             transition: background 0.2s, color 0.2s;
+            
+            /* Alinhamento horizontal */
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 8px; /* Espaço entre ícone e texto */
         }
         .links a:hover {
             background-color: #000000;
             color: #d4af37;
         }
+        .links a i {
+            font-size: 16px;
+        }
+        /* Cores personalizadas */
+        .dominio-icon { color: #d4af37; }
+        .acessorias-icon { color: #007bff; }
+        .tributare-icon { color: #28a745; }
+        .whatsapp-icon { color: #25D366; }
+        .veri-icon { color: #ff5722; }
+        .danfe-icon { color: #6c757d; }
     </style>
 </head>
 <body>
@@ -99,35 +116,47 @@
     </header>
     <main>
         <section class="category">
-              <h2>Contabilidade</h2> 
+            <h2>Contabilidade</h2>
             <div class="links">
-                <a href="https://www.dominioweb.com.br/" target="_blank">Dominio WEB</a>
-                <a href="https://app.acessorias.com/?login" target="_blank">Acessorias</a>
-                <a href="https://app.tributare.net/" target="_blank">Tributare</a>
-                <a href="https://app.komunic.net/" target="_blank">WhatsAPP (Atendimento)</a>
-                <a href="https://38149535000100.portal-veri.com.br/login" target="_blank">Veri</a>
-                <a href="https://danfe.app/index.php" target="_blank">Danfe Digital</a>
+                <a href="https://www.dominioweb.com.br/" target="_blank">
+                    <i class="fas fa-laptop-code dominio-icon"></i> Dominio WEB
+                </a>
+                <a href="https://app.acessorias.com/?login" target="_blank">
+                    <i class="fas fa-tasks acessorias-icon"></i> Acessorias
+                </a>
+                <a href="https://app.tributare.net/" target="_blank">
+                    <i class="fas fa-file-invoice-dollar tributare-icon"></i> Tributare
+                </a>
+                <a href="https://app.komunic.net/" target="_blank">
+                    <i class="fab fa-whatsapp whatsapp-icon"></i> WhatsAPP (Atendimento)
+                </a>
+                <a href="https://38149535000100.portal-veri.com.br/login" target="_blank">
+                    <i class="fas fa-user-lock veri-icon"></i> Veri
+                </a>
+                <a href="https://danfe.app/index.php" target="_blank">
+                    <i class="fas fa-file-alt danfe-icon"></i> Danfe Digital
+                </a>
             </div>
         </section>
         <section class="category">
             <h2>Categoria 2</h2>
             <div class="links">
-                <a href="#" target="_blank">Link Exemplo 1</a>
-                <a href="#" target="_blank">Link Exemplo 2</a>
+                <a href="#" target="_blank"><i class="fas fa-link"></i> Link Exemplo 1</a>
+                <a href="#" target="_blank"><i class="fas fa-link"></i> Link Exemplo 2</a>
             </div>
         </section>
         <section class="category">
             <h2>Categoria 3</h2>
             <div class="links">
-                <a href="#" target="_blank">Link Exemplo 1</a>
-                <a href="#" target="_blank">Link Exemplo 2</a>
+                <a href="#" target="_blank"><i class="fas fa-link"></i> Link Exemplo 1</a>
+                <a href="#" target="_blank"><i class="fas fa-link"></i> Link Exemplo 2</a>
             </div>
         </section>
         <section class="category">
             <h2>Categoria 4</h2>
             <div class="links">
-                <a href="#" target="_blank">Link Exemplo 1</a>
-                <a href="#" target="_blank">Link Exemplo 2</a>
+                <a href="#" target="_blank"><i class="fas fa-link"></i> Link Exemplo 1</a>
+                <a href="#" target="_blank"><i class="fas fa-link"></i> Link Exemplo 2</a>
             </div>
         </section>
     </main>
